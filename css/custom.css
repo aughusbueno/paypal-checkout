@@ -1,0 +1,57 @@
+*{
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+.header-text{
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+input,
+button{
+    box-shadow: unset !important;
+}
+
+label{
+    font-size: .9em !important;
+}
+
+p{
+    font-size: .85em !important;
+}
+
+small{
+    font-size: .8em !important;
+}
+
+.grid{
+    display: grid;
+}
+
+.grid.main-grid{
+    grid-gap:30px;
+    grid-template-columns: 350px 1fr;
+}
+
+.grid.grid-2{
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #21252A;
+    background-color: #f8f9fa;
+    box-shadow: unset;
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-2{
+        grid-template-columns: unset !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-grid{
+        grid-template-columns: unset !important;
+        
+    }
+}
